@@ -1,0 +1,85 @@
+/* Temel Stiller */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Açık gri arka plan */
+    color: #333; /* Koyu gri metin rengi */
+}
+
+header, main, footer {
+    width: 80%; /* İçeriği ortalamak için */
+    max-width: 1000px; /* Maksimum genişlik */
+    margin: 0 auto; /* Yatayda ortala */
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #446688; /* Başlık rengi */
+}
+
+/* Sunum Bölümü */
+.sunum-bolumu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    margin-bottom: 20px; /* Bölümler arası boşluk */
+}
+
+/* Canva Container */
+.canva-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 en-boy oranı */
+    height: 0;
+    overflow: hidden;
+}
+
+.canva-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Canva Linki */
+.canva-link {
+    display: block; /* Blok seviyesi element */
+    text-align: center; /* Metni ortala */
+    margin-top: 10px;
+    color: #446688; /* Bağlantı rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+}
+.canva-link:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi */
+}
+
+/* Ek Bilgiler Bölümü */
+.ek-bilgiler {
+    background-color: #f9f9f9; /* Hafif farklı arka plan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+
+}
+
+/* Responsive (Mobil Uyumlu) Tasarım */
+@media (max-width: 768px) {
+    header, main, footer {
+        width: 95%; /* Daha küçük ekranlarda genişliği artır */
+    }
+}
